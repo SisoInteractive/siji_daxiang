@@ -8,8 +8,10 @@
     <meta name="apple-touch-fullscreen" content="no"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <title></title>
-
+    <title>四季上东-万象里活动</title>
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
+        <img src='assets/images/title.jpg' width="100" />
+    </div>
     <!-- injector:css -->
     <link rel="stylesheet" href="assets/stylesheets/main.css"/>
     <link rel="stylesheet" href="assets/stylesheets/swiper.min.css"/>
@@ -22,9 +24,10 @@
 </head>
 <body>
 <audio src="assets/audio/bgm.mp3"  autoplay loop controls="controls" id="audio" style="display: none;"></audio>
-
 <div id="iSlider-wrapper" class="arrow"></div>
 <div id="iSlider-arrow" class="arrow"></div>
+<!-- 音乐按钮 -->
+<img src="assets/images/yinfu.png" width="9.8%" class="mp3-box">
 
 <!-- loading -->
 <div class="loading_box" >
@@ -33,114 +36,242 @@
 
 <div class="swiper-container" style="display: none">
     <div class= "swiper-wrapper scene-wrapper" >
-        <div class="swiper-slide  scene01">
+        <!--<div class="swiper-slide  scene01">-->
 
-            <img src="assets/images/jiaochaxian.png" width="85%" class="jiaochaxian">
-            <img src="assets/images/quan-2.png" width="118%" class="quan2">
-            <img src="assets/images/banquan.png" width="114%" class="quan3">
-            <img src="assets/images/quan-1.png" width="98%" class="quan1">
-            <img src="assets/images/logo.png" width="24.1%" alt="" class="logo"/>
-            <img src="assets/images/hengtiao.png" width="100%" alt="" class="hengfu"/>
-            <img src="assets/images/xiang.png" width="100%" alt="" class="daxiang" style="left: -0.61%"/>
+            <!--<img src="assets/images/jiaochaxian.png" width="85%" class="jiaochaxian">-->
+            <!--<img src="assets/images/quan-2.png" width="118%" class="quan2">-->
+            <!--<img src="assets/images/banquan.png" width="114%" class="quan3">-->
+            <!--<img src="assets/images/quan-1.png" width="98%" class="quan1">-->
+            <!--<img src="assets/images/logo.png" width="24.1%" alt="" class="logo"/>-->
+            <!--<img src="assets/images/hengtiao.png" width="100%" alt="" class="hengfu"/>-->
+            <!--<img src="assets/images/xiang.png" width="100%" alt="" class="daxiang" style="left: -0.61%"/>-->
 
-            <img src="assets/images/zi.png" width="59.7%" class="zi">
-            <img src="assets/images/zi-02.png" width="37.11%" class="zi-02">
+            <!--<img src="assets/images/zi.png" width="59.7%" class="zi">-->
+            <!--<img src="assets/images/zi-02.png" width="37.11%" class="zi-02">-->
 
-        </div>
-        <div class="swiper-slide  scene02">
+        <!--</div>-->
+        <!--<div class="swiper-slide  scene02">-->
 
-            <img src="assets/images/p2/di.jpg" width="100%" class="di">
-            <img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">
-            <img src="assets/images/p2/xiang.png" width="88.41%" class="xiang">
-            <img src="assets/images/p2/zi.png" width="39.02%" class="zi">
-            <img src="assets/images/p2/dian.png" width="14.16%" class="dian">
-            <img src="assets/images/p2/fu.png" width="14%" class="fu">
-            <img src="assets/images/p2/ji.png" width="14%" class="ji">
-            <img src="assets/images/p2/hui.png" width="14%" class="hui">
-            <img src="assets/images/p2/zi-01.png" width="52.91%" class="zi-01">
+            <!--<img src="assets/images/p2/di.jpg" width="100%" class="di">-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+            <!--<img src="assets/images/p2/xiang.png" width="88.41%" class="xiang">-->
+            <!--<img src="assets/images/p2/zi.png" width="39.02%" class="zi">-->
+            <!--<img src="assets/images/p2/dian.png" width="14.16%" class="dian">-->
+            <!--<img src="assets/images/p2/fu.png" width="14%" class="fu">-->
+            <!--<img src="assets/images/p2/ji.png" width="14%" class="ji">-->
+            <!--<img src="assets/images/p2/hui.png" width="14%" class="hui">-->
+            <!--<img src="assets/images/p2/zi-01.png" width="52.91%" class="zi-01">-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="swiper-slide  scene03">Slide 3</div>
-        <div class="swiper-slide  scene04">Slide 4</div>
-        <div class="swiper-slide  scene05">
-            <img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">
-            <img src="assets/images/p5/daxiang.png" width="92.11%" class="daxiang">
-            <img src="assets/images/p5/shan.png" width="72.36%" class="shan">
+        <!--<div class="swiper-slide  scene03">-->
 
-            <img src="assets/images/p5/zi.png" width="58.33%" class="zi">
-            <img src="assets/images/p5/zi2.png" width="44%" class="zi2">
-            <img src="assets/images/p5/zi3.png" width="40.55%" class="zi3">
-            <img src="assets/images/p5/xingxing.png" width="40.13%" class="xx">
+            <!--<div class="scene-box">-->
 
-            <img src="assets/images/p5/daqian.png" width="20.27%" class="daqian">
-            <img src="assets/images/p5/daqian.png" width="12.27%" class="xiaoqian">
-            <img src="assets/images/p5/quan3.png" width="6.52%" class="qian">
-        </div>
+                <!--<img src="assets/images/p3/hua1.png" width="54.74%" class="hua1">-->
+                <!--<img src="assets/images/p3/jiantou.png" width="95.76%" class="jiantou">-->
 
-        <div class="swiper-slide  scene06">
+                <!--<img src="assets/images/p3/piaofu1.png" width="18.75%" class="piaofu1">-->
+                <!--<img src="assets/images/p3/piaofu2.png" width="12.2%" class="piaofu2">-->
+                <!--<img src="assets/images/p3/piaofu3.png" width="17.45%" class="piaofu3">-->
+                <!--<img src="assets/images/p3/piaofu4.png" width="15.6%" class="piaofu4">-->
+
+                <!--<img src="assets/images/p3/xiang.png" width="76.61%" class="xiang">-->
+                <!--<img src="assets/images/p3/piaofu5.png" width="13.05%" class="piaofu5">-->
+                <!--<img src="assets/images/p3/piaofu6.png" width="7.79%" class="piaofu6">-->
+
+                <!--<img src="assets/images/p3/zi.png" width="47.62%" class="zi">-->
+                <!--<img src="assets/images/p3/gai.png" width="14.91%" class="gai">-->
+                <!--<img src="assets/images/p3/xie.png" width="14.91%" class="xie">-->
+                <!--<img src="assets/images/p3/shang.png" width="14.91%" class="shang">-->
+                <!--<img src="assets/images/p3/jie.png" width="14.91%" class="jie">-->
+                <!--<img src="assets/images/p3/mo.png" width="14.91%" class="mo">-->
+                <!--<img src="assets/images/p3/shi.png" width="14.91%" class="shi">-->
+
+                <!--<img src="assets/images/p3/zi2.png" width="51.18%" class="zi2">-->
+                <!--<img src="assets/images/p3/zi3.png" width="67.28%" class="zi3">-->
+
+            <!--</div>-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+        <!--</div>-->
+
+
+        <!--<div class="swiper-slide  scene04">-->
+
+            <!--<div class="scene-box">-->
+
+                <!--<img src="assets/images/p4/xiang2.png" width="72.71%" class="xiang1">-->
+                <!--<img src="assets/images/p4/xiang3.png" width="44.40%" class="xiang2">-->
+                <!--<img src="assets/images/p4/xiang1.png" width="69.15%" class="xiang3">-->
+
+                <!--<img src="assets/images/p4/zi.png" width="88.52%" class="zi">-->
+                <!--<img src="assets/images/p4/zi1.png" width="45.42%" class="zi1">-->
+
+                <!--<img src="assets/images/p4/yi.png" width="12.88%" class="yi">-->
+                <!--<img src="assets/images/p4/ge.png" width="12.88%" class="ge">-->
+                <!--<img src="assets/images/p4/guo.png" width="12.88%" class="guo">-->
+                <!--<img src="assets/images/p4/ji.png" width="12.88%"  class="ji">-->
+                <!--<img src="assets/images/p4/chao.png" width="12.88%" class="chao">-->
+                <!--<img src="assets/images/p4/liu.png" width="12.88%" class="liu">-->
+                <!--<img src="assets/images/p4/shi.png" width="12.88%" class="shi">-->
+                <!--<img src="assets/images/p4/fan.png" width="12.88%" class="fan">-->
+                <!--<img src="assets/images/p4/qun.png" width="12.88%" class="qun">-->
+                <!--<img src="assets/images/p4/zi2.png" width="42.88%" class="zi2">-->
+
+            <!--</div>-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+
+        <!--</div>-->
+        <!--<div class="swiper-slide  scene05">-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+            <!--<img src="assets/images/p5/daxiang.png" width="92.11%" class="daxiang">-->
+            <!--<img src="assets/images/p5/shan.png" width="72.36%" class="shan">-->
+
+            <!--<img src="assets/images/p5/zi.png" width="58.33%" class="zi">-->
+            <!--<img src="assets/images/p5/zi2.png" width="44%" class="zi2">-->
+            <!--<img src="assets/images/p5/zi3.png" width="40.55%" class="zi3">-->
+            <!--<img src="assets/images/p5/xingxing.png" width="42.13%" class="xx">-->
+            <!--<img src="assets/images/p5/daqian.png" width="20.27%" class="daqian">-->
+            <!--<img src="assets/images/p5/daqian.png" width="12.27%" class="xiaoqian">-->
+            <!--<img src="assets/images/p5/quan3.png" width="6.52%" class="qian">-->
+
+            <!--<img src="assets/images/p5/shou.png" width="14.61%" class="shou">-->
+            <!--<img src="assets/images/p5/yi.png" width="14.61%" class="yi">-->
+            <!--<img src="assets/images/p5/man1.png" width="14.61%" class="man1">-->
+            <!--<img src="assets/images/p5/man1.png" width="14.61%" class="man2">-->
+
+        <!--</div>-->
+
+        <!--<div class="swiper-slide  scene06">-->
+            <!--<div class="scene-box">-->
+                <!--<img src="assets/images/p6/bizi1.png" width="38%" class="bizi01">-->
+                <!--<img src="assets/images/p6/bizi2.png" width="28%" class="bizi02">-->
+                <!--<img src="assets/images/p6/bizi3.png" width="18.11%" class="bizi03">-->
+                <!--<img src="assets/images/p6/bizi4.png" width="98%" class="bizi04">-->
+                <!--<img src="assets/images/p6/bizi5.png " width="30%" class="bizi05">-->
+
+                <!--<img src="assets/images/p6/zi01.png" width="50.77%" class="zi01">-->
+                <!--<img src="assets/images/p6/zi02.png" width="46%" class="zi02">-->
+                <!--<img src="assets/images/p6/zi03.png" width="46%" class="zi03">-->
+                <!--<img src="assets/images/p6/zi04.png" width="41%" class="zi04">-->
+                <!--<img src="assets/images/p6/gu.png" width="26.88%" class="gu">-->
+
+                <!--<img src="assets/images/p6/hai.png" width="16.61%" class="hai">-->
+                <!--<img src="assets/images/p6/you.png" width="16.61%" class="you">-->
+            <!--</div>-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+
+        <!--</div>-->
+
+        <!--<div class="swiper-slide  scene07">-->
+            <!--<div class="scene-box">-->
+                <!--<img src="assets/images/p7/ditu.jpg"  width="100%" class="ditu">-->
+                <!--<img src="assets/images/p7/xiang.png" width="100%" class="xiang">-->
+                <!--<img src="assets/images/p7/zi.png"    width="84%" class="zi">-->
+                <!--<img src="assets/images/p7/zi1.png"   width="66.61%" class="zi1">-->
+
+                <!--<img src="assets/images/p7/she.png"   width="15.6%" class="she">-->
+                <!--<img src="assets/images/p7/hua.png"   width="15.6%" class="hua">-->
+                <!--<img src="assets/images/p7/ka.png"    width="15.6%"  class="ka">-->
+                <!--<img src="assets/images/p7/fei.png"   width="15.6%" class="fei">-->
+            <!--</div>-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+        <!--</div>-->
+
+
+        <!--<div class="swiper-slide  scene08">-->
+            <!--<div class="scene-box">-->
+                <!--<img src="assets/images/p8/ditu.png" width="100%" class="xiang">-->
+                <!--<img src="assets/images/p7/zi.png"    width="84%" class="zi">-->
+                <!--<img src="assets/images/p8/zi1.png"   width="66.61%" class="zi1">-->
+
+                <!--<img src="assets/images/p7/she.png"   width="15.6%" class="she">-->
+                <!--<img src="assets/images/p7/hua.png"   width="15.6%" class="hua">-->
+                <!--<img src="assets/images/p7/ka.png"    width="15.6%"  class="ka">-->
+                <!--<img src="assets/images/p7/fei.png"   width="15.6%" class="fei">-->
+            <!--</div>-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+        <!--</div>-->
+
+
+        <!--<div class="swiper-slide  scene09">-->
+            <!--<div class="scene-box">-->
+                <!--<img src="assets/images/p9/ditu.jpg" width="120%" class="ditu">-->
+                <!--<img src="assets/images/p9/xiang.png" width="100%" class="xiang">-->
+                <!--<img src="assets/images/p7/zi.png"    width="84%" class="zi">-->
+                <!--<img src="assets/images/p9/zi1.png"   width="80.61%" class="zi1">-->
+
+                <!--<img src="assets/images/p7/she.png"   width="15.6%" class="she">-->
+                <!--<img src="assets/images/p7/hua.png"   width="15.6%" class="hua">-->
+                <!--<img src="assets/images/p7/ka.png"    width="15.6%"  class="ka">-->
+                <!--<img src="assets/images/p7/fei.png"   width="15.6%" class="fei">-->
+            <!--</div>-->
+            <!--<img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">-->
+        <!--</div>-->
+
+        <div class="swiper-slide scene10">
             <div class="scene-box">
-                <img src="assets/images/p6/bizi1.png" width="38%" class="bizi01">
-                <img src="assets/images/p6/bizi2.png" width="28%" class="bizi02">
-                <img src="assets/images/p6/bizi3.png" width="18.11%" class="bizi03">
-                <img src="assets/images/p6/bizi4.png" width="98%" class="bizi04">
-                <img src="assets/images/p6/bizi5.png " width="30%" class="bizi05">
-
-                <img src="assets/images/p6/zi01.png" width="50.77%" class="zi01">
-                <img src="assets/images/p6/zi02.png" width="46%" class="zi02">
-                <img src="assets/images/p6/zi03.png" width="46%" class="zi03">
-                <img src="assets/images/p6/zi04.png" width="41%" class="zi04">
-                <img src="assets/images/p6/gu.png" width="26.88%" class="gu">
+                <img src="assets/images/p10/daxiang.jpg" width="100%" class="daxiang">
+                <img src="assets/images/p10/zi1.png" width="64.06%" class="zi1">
+                <img src="assets/images/p10/zi2.png" width="18.81%" class="zi2">
+                <img src="assets/images/p10/zi3.png" width="42.71%" class="zi3">
+                <img src="assets/images/p10/zi4.png" width="32.54%" class="zi4">
+                <img src="assets/images/p10/zi5.png" width="18.81%" class="zi5">
             </div>
-            <img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">
+            <img src="assets/images/p10/kuang.png" width="100%">
         </div>
 
-        <div class="swiper-slide  scene07">
+        <div class="swiper-slide scene11">
             <div class="scene-box">
-                <img src="assets/images/p7/ditu.jpg"  width="100%" class="ditu">
-                <img src="assets/images/p7/xiang.png" width="100%" class="xiang">
-                <img src="assets/images/p7/zi.png"    width="84%" class="zi">
-                <img src="assets/images/p7/zi1.png"   width="66.61%" class="zi1">
-
-                <img src="assets/images/p7/she.png"   width="15.6%" class="she">
-                <img src="assets/images/p7/hua.png"   width="15.6%" class="hua">
-                <img src="assets/images/p7/ka.png"    width="15.6%"  class="ka">
-                <img src="assets/images/p7/fei.png"   width="15.6%" class="fei">
+                <img src="assets/images/p11/zi1.png" width="41.69%" class="zi1">
+                <img src="assets/images/p11/jiangpin1.png" width="49.32%" class="jianpin">
+                <img src="assets/images/p11/zi2.png" width="41.69%" class="zi2">
+                <img src="assets/images/p11/xing.png" width="48.64%" class="xx">
             </div>
-            <img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">
+            <img src="assets/images/p10/kuang.png" width="100%">
         </div>
 
-
-        <div class="swiper-slide  scene08">
+        <div class="swiper-slide scene12">
             <div class="scene-box">
-                <img src="assets/images/p8/ditu.png" width="100%" class="xiang">
-                <img src="assets/images/p7/zi.png"    width="84%" class="zi">
-                <img src="assets/images/p8/zi1.png"   width="66.61%" class="zi1">
-
-                <img src="assets/images/p7/she.png"   width="15.6%" class="she">
-                <img src="assets/images/p7/hua.png"   width="15.6%" class="hua">
-                <img src="assets/images/p7/ka.png"    width="15.6%"  class="ka">
-                <img src="assets/images/p7/fei.png"   width="15.6%" class="fei">
+                <img src="assets/images/p12/zi1.png" width="41.69%" class="zi1">
+                <img src="assets/images/p12/shoubiao.png" width="63.05%" class="jianpin">
+                <img src="assets/images/p12/zi2.png" width="69.83%" class="zi2">
+                <img src="assets/images/p12/xing.png" width="86.61%" class="xx">
             </div>
-            <img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">
+            <img src="assets/images/p10/kuang.png" width="100%">
         </div>
 
-
-        <div class="swiper-slide  scene09">
+        <div class="swiper-slide scene13">
             <div class="scene-box">
-                <img src="assets/images/p9/ditu.jpg" width="120%" class="ditu">
-                <img src="assets/images/p9/xiang.png" width="100%" class="xiang">
-                <img src="assets/images/p7/zi.png"    width="84%" class="zi">
-                <img src="assets/images/p9/zi1.png"   width="80.61%" class="zi1">
 
-                <img src="assets/images/p7/she.png"   width="15.6%" class="she">
-                <img src="assets/images/p7/hua.png"   width="15.6%" class="hua">
-                <img src="assets/images/p7/ka.png"    width="15.6%"  class="ka">
-                <img src="assets/images/p7/fei.png"   width="15.6%" class="fei">
+                <img src="assets/images/p13/zi1.png" width="43%" class="zi1">
+                <img src="assets/images/p13/kafeiji.png" width="60%" class="jianpin">
+                <img src="assets/images/p13/zi.png" width="43.89%" class="zi2">
+                <img src="assets/images/p13/xing.png" width="70.61%" class="xx">
+
             </div>
-            <img src="assets/images/p2/zhuzi.png" width="90.13%" class="zhuzi" style="left: 5.3%;top: 5%">
+            <img src="assets/images/p10/kuang.png" width="100%">
         </div>
+
+        <div class="swiper-slide scene14">
+            <img src="assets/images/p14/di.jpg" width="100%" class="di">
+            <img src="assets/images/p14/logo.png" width="57.5%" class="logo">
+            <div class="scene-box">
+                <img src="assets/images/p14/zi.png" width="40%" class="zi">
+                <img src="assets/images/p14/bg.jpg" width="100%" class="bg">
+                <img src="assets/images/p14/zi1.png" width="63.38%" class="zi1">
+                <img src="assets/images/p14/zi2.png" width="55.08%" class="zi2">
+                <img src="assets/images/p14/zi3.png" width="80.84%" class="zi3">
+                <img src="assets/images/p14/zi4.png" width="71.86%" class="zi4">
+            </div>
+            <img src="assets/images/p10/kuang.png" width="100%" >
+
+        </div>
+
+
     </div>
+
+
 </div>
 
 <!-- injector:js -->

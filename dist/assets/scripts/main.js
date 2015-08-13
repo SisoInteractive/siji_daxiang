@@ -37,14 +37,13 @@ var app = {
             img.src = imgPath + img_SrcArr[i];
             img.onload = function(){
                 ++loadLength
-                console.log(loadLength)
 
                 if( loadLength/imgLength > 0.5 ){
                     setTimeout(function(){
                         $('.loading_box').hide();
                         $('.swiper-container').show();
                         app.create();
-                    },200)
+                    },1200)
                 }
 
             };
@@ -71,13 +70,16 @@ var app = {
                 setTimeout(function () {
                     $('.swiper-slide').removeClass('resetAnimation');
                 }, 20);
+
+
             },
 
             onTransitionEnd: function (swiper) {
-
-                if(app.mySwiper.isEnd){
+                if(swiper.activeIndex == 13){
                     $('.arrow').hide();
+                    console.log(1)
                 }else{
+                    console.log(2)
                     $('.arrow').show();
                 }
             }

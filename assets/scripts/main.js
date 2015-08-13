@@ -71,13 +71,16 @@ var app = {
                 setTimeout(function () {
                     $('.swiper-slide').removeClass('resetAnimation');
                 }, 20);
+
+
             },
 
             onTransitionEnd: function (swiper) {
-
-                if(app.mySwiper.isEnd){
+                if(swiper.activeIndex == 13){
                     $('.arrow').hide();
+                    console.log(1)
                 }else{
+                    console.log(2)
                     $('.arrow').show();
                 }
             }

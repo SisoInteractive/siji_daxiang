@@ -42,7 +42,7 @@ var app = {
                 if( loadLength/imgLength > 0.5 ){
                     setTimeout(function(){
                         $('.loading_box').hide();
-                        $('.swiper-container').fadeIn();
+                        $('.swiper-container').show();
                         app.create();
                     },200)
                 }

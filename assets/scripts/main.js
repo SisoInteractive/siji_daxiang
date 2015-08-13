@@ -39,7 +39,7 @@ var app = {
                 ++loadLength
                 console.log(loadLength)
 
-                if(loadLength == imgLength ){
+                if( loadLength/imgLength > 0.5 ){
                     setTimeout(function(){
                         $('.loading_box').hide();
                         $('.swiper-container').fadeIn();

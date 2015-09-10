@@ -7,29 +7,29 @@ var app = {
     loading:function(){
         var img_SrcArr = [
             'jiaochaxian.png', 'quan-2.png', 'banquan.png', 'quan-1.png', 'logo.png', 'hengtiao.png',
-            'xiang.png', 'zi.png', 'zi-02.png', 'p2/di.jpg', 'p2/zhuzi.png', 'p2/xiang.png', 'p2/zi.png',
-            'p2/dian.png', 'p2/fu.png', 'p2/ji.png', 'p2/hui.png', 'p2/zi-01.png',
-            'p3/hua1.png', 'p3/jiantou.png', 'p3/piaofu1.png', 'p3/piaofu2.png', 'p3/piaofu3.png', 'p3/piaofu4.png', 'p3/xiang.png', 'p3/piaofu5.png',
-            'p3/piaofu6.png', 'p3/zi.png', 'p3/gai.png', 'p3/xie.png',
-            'p3/shang.png', 'p3/jie.png', 'p3/mo.png', 'p3/shi.png', 'p3/zi2.png', 'p3/zi3.png',
-            'p4/xiang2.png', 'p4/xiang3.png', 'p4/xiang1.png', 'p4/zi.png', 'p4/zi1.png', 'p4/yi.png', 'p4/ge.png',
-            'p4/guo.png', 'p4/ji.png', 'p4/chao.png', 'p4/liu.png', 'p4/shi.png', 'p4/fan.png', 'p4/qun.png', 'p4/zi2.png',
-            'p5/daxiang.png','p5/shan.png','p5/zi.png','p5/zi2.png','p5/zi3.png','p5/xingxing.png','p5/daqian.png','p5/quan3.png','p5/shou.png',
-            'p5/yi.png','p5/man1.png',
-            'p6/bizi1.png','p6/bizi2.png','p6/bizi3.png','p6/bizi4.png','p6/bizi5.png','p6/zi01.png','p6/zi02.png','p6/zi03.png','p6/zi04.png',
-            'p6/gu.png','p6/hai.png','p6/you.png',
-            'p10/daxiang.jpg','p10/zi1.png','p10/zi2.png','p10/zi3.png','p10/kuang.png','p10/zi4.png','p10/zi5.png',
+            //'xiang.png', 'zi.png', 'zi-02.png', 'p2/di.jpg', 'p2/zhuzi.png', 'p2/xiang.png', 'p2/zi.png',
+            //'p2/dian.png', 'p2/fu.png', 'p2/ji.png', 'p2/hui.png', 'p2/zi-01.png',
+            //'p3/hua1.png', 'p3/jiantou.png', 'p3/piaofu1.png', 'p3/piaofu2.png', 'p3/piaofu3.png', 'p3/piaofu4.png', 'p3/xiang.png', 'p3/piaofu5.png',
+            //'p3/piaofu6.png', 'p3/zi.png', 'p3/gai.png', 'p3/xie.png',
+            //'p3/shang.png', 'p3/jie.png', 'p3/mo.png', 'p3/shi.png', 'p3/zi2.png', 'p3/zi3.png',
+            //'p4/xiang2.png', 'p4/xiang3.png', 'p4/xiang1.png', 'p4/zi.png', 'p4/zi1.png', 'p4/yi.png', 'p4/ge.png',
+            //'p4/guo.png', 'p4/ji.png', 'p4/chao.png', 'p4/liu.png', 'p4/shi.png', 'p4/fan.png', 'p4/qun.png', 'p4/zi2.png',
+            //'p5/daxiang.png','p5/shan.png','p5/zi.png','p5/zi2.png','p5/zi3.png','p5/xingxing.png','p5/daqian.png','p5/quan3.png','p5/shou.png',
+            //'p5/yi.png','p5/man1.png',
+            //'p6/bizi1.png','p6/bizi2.png','p6/bizi3.png','p6/bizi4.png','p6/bizi5.png','p6/zi01.png','p6/zi02.png','p6/zi03.png','p6/zi04.png',
+            //'p6/gu.png','p6/hai.png','p6/you.png',
+            //'p10/daxiang.jpg','p10/zi1.png','p10/zi2.png','p10/zi3.png','p10/kuang.png','p10/zi4.png','p10/zi5.png',
         ];
         var imgPath = "assets/images/";
         var imgLength = img_SrcArr.length;
-        var loadLength = 0;
+        var loadLength = 1;//0
         for( var i = 0; i< imgLength; i++ ){
             var img = new Image();
             img.src = imgPath + img_SrcArr[i];
             img.onload = function(){
                 ++loadLength
 
-                if( loadLength/imgLength > 0.5 ){
+                if( loadLength/imgLength > 0 ){
                     console.log(loadLength)
                     setTimeout(function(){
                         $('.loading_box').hide();

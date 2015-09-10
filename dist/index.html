@@ -27,7 +27,7 @@
 </head>
 <body>
 <audio src="assets/audio/bgm.mp3"  loop controls="controls" id="audio" style="position: absolute;top: -999px;"></audio>
-<!--<audio src="assets/audio/daxiang.mp3"    id="audio2" style="position: absolute;top: -999px;"></audio>-->
+<audio src="assets/audio/daxiang.mp3"    id="audio2" style="position: absolute;top: -999px;"></audio>
 <div id="iSlider-wrapper" class="arrow"></div>
 <div id="iSlider-arrow" class="arrow"></div>
 <!-- 音乐按钮 -->
@@ -234,6 +234,18 @@
 <script src="assets/scripts/jquery-2.1.3.min.js"></script>
 <script src="assets/scripts/swiper.js"></script>
 <script src="assets/scripts/main.js"></script>
-
+<script>
+    //click mp3 box
+    $('.mp3-box').click(function(){
+        var audio = document.getElementById('audio');
+        $(this).toggleClass('active');
+        if(!audio.paused){
+            $('#audio')[0].pause();
+        }else{
+            $('#audio')[0].play();
+        }
+        console.log(!audio.paused)
+    })
+</script>
 </body>
 </html>

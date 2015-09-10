@@ -53,7 +53,10 @@ var app = {
             onInit: function () {
                 setTimeout(function(){
                     $('#audio2')[0].play();
-                },1600)
+                },1600);
+                setTimeout(function(){
+                    $('#audio')[0].play();
+                },2600);
 
             },
 
@@ -73,26 +76,20 @@ var app = {
                 }else{
                     $('.arrow').show();
                 }
-
-                if(swiper.activeIndex == 0){
-                    $('#audio')[0].pause();
-                }else{
-                    $('#audio')[0].play();
-                }
-
             }
         });
 
-        //click mp3 box
-        $('.mp3-box').on("click", function(){
-            $(this).toggleClass('active');
-            if(!audio.paused){
-                $('#audio')[0].pause();
-            }else{
-                $('#audio')[0].play();
-            }
-
-        })
+            //click mp3 box
+        //$('.mp3-box').click(function(){
+        //    var audio = document.getElementById('audio');
+        //    $(this).toggleClass('active');
+        //    if(!audio.paused){
+        //        $('#audio')[0].pause();
+        //    }else{
+        //        $('#audio')[0].play();
+        //    }
+        //    console.log(!audio.paused)
+        //})
 
         //first time play BGM
         //var initSound = function () {

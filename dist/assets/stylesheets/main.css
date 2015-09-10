@@ -801,25 +801,25 @@ input {
   opacity: 1;
 }
 .scene02.swiper-slide-active .xiang {
-  -webkit-animation: fadeInRightBig 1s ease 1s 1 forwards;
+  -webkit-animation: fadeInRightBig 1s ease .2s 1 forwards;
 }
 .scene02.swiper-slide-active .zi {
-  -webkit-animation: fadeInDownBig 1s ease 1.4s 1 forwards;
+  -webkit-animation: fadeInDownBig 1s ease .2s 1 forwards;
 }
 .scene02.swiper-slide-active .dian {
-  -webkit-animation: fadeInDownBig .8s ease 1.8s 1 forwards;
+  -webkit-animation: fadeInDownBig .8s ease .6s 1 forwards;
 }
 .scene02.swiper-slide-active .fu {
-  -webkit-animation: fadeInDownBig .8s ease 2.2s 1 forwards;
+  -webkit-animation: fadeInDownBig .8s ease 1s 1 forwards;
 }
 .scene02.swiper-slide-active .ji {
-  -webkit-animation: fadeInDownBig .8s ease 2.6s 1 forwards;
+  -webkit-animation: fadeInDownBig .8s ease 1.4s 1 forwards;
 }
 .scene02.swiper-slide-active .hui {
-  -webkit-animation: fadeInDownBig .8s ease 3s 1 forwards;
+  -webkit-animation: fadeInDownBig .8s ease 1.8s 1 forwards;
 }
 .scene02.swiper-slide-active .zi-01 {
-  -webkit-animation: fadeInUpBig .8s ease 3s 1 forwards;
+  -webkit-animation: fadeInUpBig .8s ease 1.8s 1 forwards;
 }
 .scene05.swiper-slide-active .daxiang {
   -webkit-animation: fadeInRightmin .8s ease .3s 1 forwards;

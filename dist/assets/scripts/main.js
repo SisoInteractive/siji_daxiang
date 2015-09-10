@@ -23,14 +23,15 @@ var app = {
         var imgPath = "assets/images/";
         var imgLength = img_SrcArr.length;
         var loadLength = 1;//0
+        var isLoaded = false;
         for( var i = 0; i< imgLength; i++ ){
             var img = new Image();
             img.src = imgPath + img_SrcArr[i];
             img.onload = function(){
                 ++loadLength
 
-                if( loadLength/imgLength > 0 ){
-                    console.log(loadLength)
+                if( loadLength/imgLength > 0 && isLoaded == false  ){
+                    isLoaded = true;
                     setTimeout(function(){
                         $('.loading_box').hide();
                         $('.swiper-container').show();
@@ -79,17 +80,16 @@ var app = {
             }
         });
 
-            //click mp3 box
-        //$('.mp3-box').click(function(){
-        //    var audio = document.getElementById('audio');
-        //    $(this).toggleClass('active');
-        //    if(!audio.paused){
-        //        $('#audio')[0].pause();
-        //    }else{
-        //        $('#audio')[0].play();
-        //    }
-        //    console.log(!audio.paused)
-        //})
+        //click mp3 box
+        $('.mp3-box').click(function(){
+            var audio = document.getElementById('audio');
+            $(this).toggleClass('active');
+            if(!audio.paused){
+                $('#audio')[0].pause();
+            }else{
+                $('#audio')[0].play();
+            }
+        })
 
         //first time play BGM
         //var initSound = function () {

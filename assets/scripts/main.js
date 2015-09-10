@@ -18,20 +18,11 @@ var app = {
             'p5/yi.png','p5/man1.png',
             'p6/bizi1.png','p6/bizi2.png','p6/bizi3.png','p6/bizi4.png','p6/bizi5.png','p6/zi01.png','p6/zi02.png','p6/zi03.png','p6/zi04.png',
             'p6/gu.png','p6/hai.png','p6/you.png',
-            'p7/ditu.jpg','p7/xiang.png','p7/zi.png','p7/zi1.png','p7/she.png','p7/hua.png','p7/ka.png','p7/fei.png',
-            'p8/ditu.png','p8/zi1.png',
-            'p9/ditu.jpg','p9/xiang.png','p9/zi1.png',
             'p10/daxiang.jpg','p10/zi1.png','p10/zi2.png','p10/zi3.png','p10/kuang.png','p10/zi4.png','p10/zi5.png',
-            'p11/zi1.png','p11/jiangpin1.png','p11/zi2.png','p11/xing.png',
-            'p12/zi1.png','p12/shoubiao.png','p12/zi2.png','p12/xing.png',
-            'p13/zi1.png','p13/kafeiji.png','p13/zi.png','p13/xing.png',
-            'p14/di.jpg','p14/logo.png','p14/zi.png','p14/bg.jpg','p14/zi1.png','p14/zi2.png','p14/zi3.png','p14/zi4.png'
-
         ];
         var imgPath = "assets/images/";
         var imgLength = img_SrcArr.length;
         var loadLength = 0;
-
         for( var i = 0; i< imgLength; i++ ){
             var img = new Image();
             img.src = imgPath + img_SrcArr[i];
@@ -39,6 +30,7 @@ var app = {
                 ++loadLength
 
                 if( loadLength/imgLength > 0.5 ){
+                    console.log(loadLength)
                     setTimeout(function(){
                         $('.loading_box').hide();
                         $('.swiper-container').show();
@@ -56,12 +48,17 @@ var app = {
     create: function (){
         app.mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
-            parallax : true,
-            speed:300,
+            speed:500,
             // init
             onInit: function () {
-            },
+                setTimeout(function(){
+                    $('#audio2')[0].play();
+                },1600);
+                setTimeout(function(){
+                    $('#audio')[0].play();
+                },2600);
 
+            },
 
             onTransitionStart: function (swiper) {
                 //delete animation-delay
@@ -71,38 +68,36 @@ var app = {
                     $('.swiper-slide').removeClass('resetAnimation');
                 }, 20);
 
-
             },
 
             onTransitionEnd: function (swiper) {
                 if(swiper.activeIndex == 13){
                     $('.arrow').hide();
-                    console.log(1)
                 }else{
-                    console.log(2)
                     $('.arrow').show();
                 }
             }
         });
 
-        //click mp3 box
-        $('.mp3-box').on("touchend", function(){
-            $(this).toggleClass('active');
-            if(!audio.paused){
-                $('#audio')[0].pause();
-            }else{
-                $('#audio')[0].play();
-            }
+            //click mp3 box
+        //$('.mp3-box').click(function(){
+        //    var audio = document.getElementById('audio');
+        //    $(this).toggleClass('active');
+        //    if(!audio.paused){
+        //        $('#audio')[0].pause();
+        //    }else{
+        //        $('#audio')[0].play();
+        //    }
+        //    console.log(!audio.paused)
+        //})
 
-        })
-
-        //  first time play BGM
-        var initSound = function () {
-            //  delay play
-            $('#audio')[0].play();
-            document.removeEventListener('touchstart', initSound, false);
-        };
-        document.addEventListener('touchstart', initSound, false);
+        //first time play BGM
+        //var initSound = function () {
+        //    // delay play
+        //    $('#audio')[0].play();
+        //    document.removeEventListener('touchstart', initSound, false);
+        //};
+        //document.addEventListener('touchstart', initSound, false);
     },
 
     start: function (){

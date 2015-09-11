@@ -28,13 +28,14 @@ var app = {
             img.src = imgPath + img_SrcArr[i];
             img.onload = function(){
                 ++loadLength
+                console.log(loadLength/imgLength)
                 if( loadLength/imgLength > 0.9 && isLoaded == false  ){
                     isLoaded = true;
                     setTimeout(function(){
                         $('.loading_box').hide();
                         $('.swiper-container').show();
                         app.create();
-                    },1200)
+                    },1400)
                 }
 
             };
@@ -96,11 +97,11 @@ var app = {
         //};
         //document.addEventListener('touchstart', initSound, false);
 
-        var imgsrc = '';
-        $('img').each(function(){
-            imgsrc += '"' + this.src.replace('http://localhost:63342/for_pc/assets/images/', '') + '", ';
-        })
-        console.log(imgsrc)
+        //var imgsrc = '';
+        //$('img').each(function(){
+        //    imgsrc += '"' + this.src.replace('http://localhost:63342/for_pc/assets/images/', '') + '", ';
+        //})
+        //console.log(imgsrc)
 
     },
 

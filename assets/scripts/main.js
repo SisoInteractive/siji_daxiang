@@ -22,15 +22,14 @@ var app = {
         ];
         var imgPath = "assets/images/";
         var imgLength = img_SrcArr.length;
-        var loadLength = 1;//0
+        var loadLength = 0;//0
         var isLoaded = false;
         for( var i = 0; i< imgLength; i++ ){
             var img = new Image();
             img.src = imgPath + img_SrcArr[i];
             img.onload = function(){
                 ++loadLength
-
-                if( loadLength/imgLength > 0 && isLoaded == false  ){
+                if( loadLength/imgLength > 0.9 && isLoaded == false  ){
                     isLoaded = true;
                     setTimeout(function(){
                         $('.loading_box').hide();
@@ -49,7 +48,7 @@ var app = {
     create: function (){
         app.mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
-            speed:500,
+            speed:800,
             // init
             onInit: function () {
                 setTimeout(function(){
@@ -70,9 +69,8 @@ var app = {
                 }, 20);
 
             },
-
             onTransitionEnd: function (swiper) {
-                if(swiper.activeIndex == 13){
+                if(swiper.activeIndex == 10){
                     $('.arrow').hide();
                 }else{
                     $('.arrow').show();
